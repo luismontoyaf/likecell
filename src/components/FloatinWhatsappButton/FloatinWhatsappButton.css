@@ -1,0 +1,59 @@
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-message {
+    position: fixed;
+    bottom: 90px; /* Ajusta la distancia del botón */
+    left: 20px;
+    background-color: #eeeeee;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem; /* Tamaño de fuente */
+    z-index: 1000; /* Asegura que esté en el frente */
+}
+
+/* Estilos para el botón de minimizar */
+.toggle-button {
+    position: absolute; /* Posición absoluta dentro del mensaje */
+    top: -10px; /* Ajusta el espacio desde la parte superior */
+    right: -10px; /* Ajusta el espacio desde la derecha */
+    cursor: pointer;
+    font-weight: bold; /* Para que resalte */
+    font-size: 1.5rem; /* Tamaño del guion */
+    color: black; /* Color del guion */
+    width: 30px; /* Ancho del botón */
+    height: 30px; /* Alto del botón */
+    background-color: #eeeeee; /* Color de fondo del botón */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; /* Centra el guion verticalmente */
+    justify-content: center; /* Centra el guion horizontalmente */
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}

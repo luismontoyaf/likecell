@@ -1,0 +1,102 @@
+/* Estilos para el contenedor principal */
+#gamer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-size: cover; /* La imagen cubre todo el section */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.gamerSection h1,
+.gamerSection p {
+    margin: 0;
+}
+
+/* Estilos para la cuadrícula de los accesorios */
+.accesorios-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada panel de accesorios */
+.accesorio-column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto de escala en hover */
+}
+
+.accesorio-column:hover {
+    transform: scale(1.03);
+}
+
+.accesorio-column h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.accesorio-column img {
+    width: 100%;
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    #gamer {
+        padding: 10px;
+    }
+
+    .accesorio-column h2 {
+        font-size: 1em;
+    }
+
+    .accesorio-column img {
+        max-height: 150px;
+        object-fit: contain;
+    }
+}
+
+
+
+/*#gamer {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.accesorios-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.accesorio-column {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.accesorio-column img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}*/

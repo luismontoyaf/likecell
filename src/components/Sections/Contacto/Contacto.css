@@ -1,0 +1,56 @@
+#contacto .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    background-color: #ffffff; /* Ajusta el color de fondo según tu diseño */
+    border-radius: 8px;
+}
+
+.map {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    #contacto .container {
+        flex-direction: column;
+    }
+}
+
+.social-panel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-panel h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #E1306C; /* Color de hover para Instagram */
+}

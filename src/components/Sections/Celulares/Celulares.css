@@ -1,0 +1,93 @@
+/* Contenedor principal de la sección */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;          /* Ocupa todo el ancho de la pantalla */
+    height: 100vh;         /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;      /* Evita desplazamiento innecesario */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 80vw;      /* Máximo 80% del viewport en ancho para espacios reducidos */
+    margin-top: 1vh;
+    overflow: hidden;
+}
+
+/* Contenido del Carrusel */
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;       /* Mantener dentro de los límites en dispositivos pequeños */
+    max-height: 70vh;      /* Altura máxima relativa en pantallas pequeñas */
+}
+
+/* Imagen del Carrusel */
+.carousel-content img {
+    width: 32vw;
+    height: 50vh;
+    max-width: 50vw;       /* Límites relativos para pantallas grandes */
+    max-height: 30vh;      /* Máxima altura relativa al viewport */
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+/* Título del Carrusel */
+.carousel-content h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px;
+    color: #ffffff;
+    z-index: 10;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 768px) {
+    .carousel-content h2 {
+        font-size: 2em;
+    }
+    .carousel-content img {
+        max-width: 500px;
+        max-height: 400px;
+    }
+    .carousel-button {
+        font-size: 2.5rem;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 480px) {
+    .carousel-content h2 {
+        font-size: 1em;
+    }
+    .carousel-content img {
+        max-width: 90vw;    /* Ajusta al 90% del ancho del viewport en dispositivos pequeños */
+        max-height: 30vh;
+    }
+    .carousel-button {
+        font-size: 1.5rem;
+    }
+}

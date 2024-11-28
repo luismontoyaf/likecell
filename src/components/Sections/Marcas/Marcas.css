@@ -1,0 +1,64 @@
+/* src/components/Sections/Marcas/Marcas.css */
+
+.section {
+    text-align: center;
+}
+
+.card-container {
+    display: grid; /* Cambiado a grid para un control más preciso */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 15px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Ancho máximo para mantener la alineación */
+    margin-left: auto; /* Centra el contenedor */
+    margin-right: auto; /* Centra el contenedor */
+    margin-top: 20px; /* Espacio superior para separación */
+    justify-items: center;
+}
+
+.card {
+    display: flex; /* Agregado para usar Flexbox */
+    flex-direction: column; /* Alinea el contenido en una columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.788);
+    padding: 20px; /* Aumenta el padding para dar más espacio dentro de la tarjeta */
+    flex: 1 1 calc(30% - 20px); /* Ajusta el tamaño para tener tres tarjetas en pantallas grandes */
+    width: 280px;
+    min-width: 150px; /* Ancho mínimo para las tarjetas */
+    max-width: 500px; /* Tamaño máximo de las tarjetas */
+    height: 200px; /* Altura fija para que todas las tarjetas tengan la misma altura */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+.card-image {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    max-height: 150px; /* Ajusta la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen llene el espacio de forma adecuada */
+    margin-bottom: 10px; /* Espacio entre la imagen y el contenido de la tarjeta */
+}
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    }
+    .card {
+        flex: 1 1 calc(45% - 20px); /* Dos tarjetas en pantallas medianas */
+        max-width: 180px; /* Tamaño máximo en pantallas medianas */
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+    .card {
+        flex: 1 1 calc(100% - 20px); /* Una tarjeta en pantallas pequeñas */
+        max-width: 300px; /* Tamaño máximo en pantallas pequeñas */
+    }
+}
