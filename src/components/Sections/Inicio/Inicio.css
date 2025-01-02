@@ -28,8 +28,8 @@
 
 /* Imagen principal */
 .local {
-    width: 25vw;               /* 80% del ancho del viewport para que se ajuste en pantallas grandes y pequeñas */
-    max-width: 35vw;           /* Limite de ancho relativo en pantallas grandes */
+    width: 28vw;               /* 80% del ancho del viewport para que se ajuste en pantallas grandes y pequeñas */
+    max-width: 40vw;           /* Limite de ancho relativo en pantallas grandes */
     height: auto;
     border-radius: 8px;
     margin-top: 2vh;           /* Margen superior relativo a la altura del viewport */

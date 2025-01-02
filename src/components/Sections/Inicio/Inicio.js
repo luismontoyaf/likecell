@@ -1,7 +1,7 @@
 import React from 'react';
 import './Inicio.css';
 import '../../../App.css';
-import local from '../../../assets/images/local-prueba.jpg' 
+import local from '../../../assets/images/likecell-local.jpeg' 
 
 const Inicio = () => {
   return (
